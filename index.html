@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <a href="https://www.aluracursos.com/" target="_blank"><img class="logo-letra" src="img/Logo.png" alt="Logo letra 'A' de Alura"></a>
+    </header>
+
+    <main>
+        <section class="seccion1">
+            <textarea id="texto_area" class="texto_area" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <div>
+                <p class="informacion">&#9888; Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="desEncriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion2">
+            <textarea id="texto_area2" class="texto_area2" cols="20" rows="15"></textarea>
+            <div id="ocultar">
+                <img class="img-muneco" src="img/Muñeco.png">
+                <p class="mensaje-muneco">Ningún mensaje fue encontrado</p>
+                <p class="texto-muneco">Ingresa el texto que desees encriptar o desencriptar</p>
+                <p class="respuesta"></p>
+            </div>
+            <div>
+                <button id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="autor">Edward garcia</p>
+        <div class="contacto">
+            <a class="github" href="https://github.com/edwarenrique2704" target="_blank"><img src="img/github.png"></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/edward-garcia-turizo-b816b6225
+            " target="_blank"><img src="img/linkedin.png"></a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
